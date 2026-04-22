@@ -82,14 +82,3 @@ Mi meta principal es la especialización técnica y el crecimiento profesional:
 * 📧 **Email:** caarlosmdd@gmail.com
 * 💼 **LinkedIn:** https://linkedin.com/in/carlos-martinez
 * 📍 **Ubicación:** Murcia, España (Disponible para remoto)
-
-#!/bin/bash
-# Script para comprobar el estado de un servicio crítico
-SERVICE="apache2"
-
-if systemctl is-active --quiet $SERVICE; then
-    echo "El servicio $SERVICE está funcionando correctamente."
-else
-    echo "ALERTA: El servicio $SERVICE está caído. Intentando reiniciar..."
-    sudo systemctl start $SERVICE
-fi
